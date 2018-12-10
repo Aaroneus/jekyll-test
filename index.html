@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Value Cards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="assets/img/green-energy-logo-small.png" class="img-fluid" alt="Logo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>Unsubscribe</h1>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>We're sorry you didn't like that email. We always try to make sure you only receive communications
+                    that
+                    you
+                    care about</p>
+                <p>Let us know how you'd like to receive communications in future by updating the options below.</p>
+            </div>
+        </div>
+        <hr style="background-color: #ff0000;"/>
+        <div class="row">
+            <div class="col-sm-5">
+                <div id=widget-container></div>
+            </div>
+            <div class="col-sm-7">
+                <br />
+                <!-- Value Cards Start -->
+                <div class="container">
+                    <div class="row">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h5 class="card-title">Are you sure you want to Unsubscribe?</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">70% of our customers save over £40 a year by having
+                                        access to our latest offers</li>
+                                    <li class="list-group-item">A Puppy Dies every time you unsubscribe</li>
+                                    <li class="list-group-item">You'll instantly regret not being in the cool club
+                                        anymore</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Value Cards End -->
+                <!-- <hr /> -->
+                <!-- Deals Start -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/img/dyson.webp" class="img-fluid" alt="Dyson Special Offer" />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-img-overlay ">
+                                <h5 class="card-title">Save £10 off a new Vacuum Cleaner</h5>
+                                <p class="card-text">
+                                    <a href="#" class="btn btn-secondary">See the latest Deals</a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/img/macbook.jpg" class="img-fluid" alt="Macbook Special Offer" />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Win a Macbook Air!</h5>
+                                <p class="card-text">
+                                    <a href="#" class="btn btn-secondary">Enter our Competition</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/img/voucher.jpeg" class="img-fluid" alt="Voucher Questionnaire" />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Claim over £100 in Sainsburys Vouchers</h5>
+                                <p class="card-text">
+                                    <a href="#" class="btn btn-secondary">Fill out our Questionnaire</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deals End -->
+            </div>
+        </div>
+    </div>
+
+    <script async>
+        var urlParams = new URLSearchParams(window.location.search);
+        var templateId = urlParams.get('templateId');
+        var widgetId = urlParams.get('widgetId') || '';
+        var widget_config = {
+            templateId: `${templateId}`,
+            widgetId: `${widgetId}`
+        };
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://demo-widget-v2.consentric.io/public/init.js';
+            s.id = 'init';
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</body>
+
+</html>
